@@ -1,0 +1,10 @@
+server.mjs
+src/
+node_modules/
+content/backups/
+content/uploads/
+.opencode/
+scripts/
+README.md
+.env
+.env.*

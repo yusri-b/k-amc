@@ -1,0 +1,289 @@
+{
+  "meta": {
+    "title": "Klinik Aras Medical Center — Layanan Kesehatan Keluarga Terpercaya",
+    "description": "Klinik Aras Medical Center menyediakan layanan poliklinik, kesehatan anak, kandungan & kesehatan wanita, jantung, dan laboratorium dengan dokter berpengalaman. Buat janji temu online sekarang.",
+    "ogTitle": "Klinik Aras Medical Center",
+    "ogDescription": "Layanan kesehatan keluarga terpercaya dengan dokter berpengalaman dan fasilitas modern."
+  },
+  "brand": {
+    "name": "Klinik Aras",
+    "tagline": "Medical Center",
+    "logo": "",
+    "logoAlt": "",
+    "showText": true
+  },
+  "contact": {
+    "phoneDisplay": "(0812) 3456-7890",
+    "phoneHref": "+6281234567890",
+    "email": "halo@klinikaras.id",
+    "address": "Jl. Poros Topoyo - Palu, Mamuju Tengah"
+  },
+  "hero": {
+    "badge": "Terakreditasi & Melayani BPJS",
+    "titleLead": "Kesehatan keluarga Anda,",
+    "titleHighlight": "prioritas kami.",
+    "description": "Klinik Aras Medical Center menghadirkan layanan kesehatan menyeluruh dengan dokter berpengalaman, fasilitas modern, dan pelayanan yang hangat — dari pemeriksaan rutin hingga penanganan khusus.",
+    "primaryCta": {
+      "label": "Buat Janji Temu",
+      "href": "#janji-temu"
+    },
+    "secondaryCta": {
+      "label": "Lihat Layanan",
+      "href": "#layanan"
+    },
+    "image": "assets/img/hero-doctor.webp",
+    "imageAlt": "Dokter Klinik Aras Medical Center menyapa pasien dengan ramah",
+    "opening": {
+      "title": "Buka Hari Ini",
+      "hours": "08.00 – 21.00 WIB"
+    },
+    "rating": {
+      "score": "4.9 / 5.0",
+      "reviews": "1.200+ ulasan Google"
+    },
+    "stats": [
+      {
+        "value": "15",
+        "suffix": "+",
+        "label": "Tahun melayani"
+      },
+      {
+        "value": "3.5",
+        "suffix": "rb",
+        "label": "Pasien per bulan"
+      },
+      {
+        "value": "4.9",
+        "suffix": "/5",
+        "label": "Rating pasien"
+      }
+    ]
+  },
+  "services": {
+    "eyebrow": "Layanan Kami",
+    "title": "Perawatan lengkap untuk setiap kebutuhan",
+    "description": "Enam pilar layanan utama yang didukung dokter spesialis dan peralatan modern, dalam satu tempat.",
+    "items": [
+      {
+        "icon": "heart",
+        "title": "Poliklinik Umum",
+        "description": "Pemeriksaan umum, konsultasi keluhan akut–kronis, dan pengobatan lanjutan oleh dokter umum berpengalaman."
+      },
+      {
+        "icon": "child",
+        "title": "Kesehatan Anak",
+        "description": "Pantau tumbuh kembang, imunisasi, dan konsultasi kesehatan anak dengan dokter spesialis anak."
+      },
+      {
+        "icon": "female",
+        "title": "Kandungan & Kesehatan Wanita",
+        "description": "Pemeriksaan kehamilan, program kehamilan, USG 4D, dan konsultasi kesehatan reproduksi wanita."
+      },
+      {
+        "icon": "heart-pulse",
+        "title": "Klinik Jantung",
+        "description": "Skrining risiko jantung, EKG, dan konsultasi pola hidup sehat dengan dokter spesialis jantung."
+      },
+      {
+        "icon": "lab",
+        "title": "Laboratorium & EMC",
+        "description": "Pemeriksaan darah lengkap, gula, kolesterol, dan tes mendekam (EMC) dengan hasil cepat dan akurat."
+      },
+      {
+        "icon": "checkup",
+        "title": "Medical Check-Up",
+        "description": "Paket MCU individu dan perusahaan untuk deteksi dini, lengkap dengan rekomendasi gaya hidup personal."
+      }
+    ]
+  },
+  "why": {
+    "eyebrow": "Kenapa Klinik Aras",
+    "title": "Pendekatan yang berpusat pada pasien",
+    "description": "Kami percaya layanan kesehatan yang baik dimulai dari mendengarkan. Setiap kunjungan dirancang agar Anda merasa didengar, dipahami, dan mendapatkan rencana perawatan yang jelas.",
+    "image": "assets/img/consult.webp",
+    "imageAlt": "Dokter menjelaskan hasil pemeriksaan kepada pasien",
+    "highlight": {
+      "value": "98%",
+      "label": "pasien merasa puas dengan pelayanan kami"
+    },
+    "items": [
+      {
+        "title": "Dokter berpengalaman & bersertifikasi",
+        "description": "Tim dokter spesialis dengan rekam jejak lebih dari 15 tahun."
+      },
+      {
+        "title": "Pendaftaran & rekam medis digital",
+        "description": "Antri lebih singkat, riwayat medis tersimpan aman dan rapi."
+      },
+      {
+        "title": "Tarif transparan & melayani BPJS",
+        "description": "Estimasi biaya dijelaskan sebelum pemeriksaan — tanpa biaya tersembunyi."
+      },
+      {
+        "title": "Layanan darurat 24 jam",
+        "description": "Konsultasi gawat darurat lewat WhatsApp kapan pun Anda butuhkan."
+      }
+    ]
+  },
+  "doctors": {
+    "eyebrow": "Tim Medis",
+    "title": "Dokter yang merawat Anda",
+    "description": "Ditemani oleh tenaga medis profesional yang berkomitmen pada perawatan yang berkualitas dan penuh empati.",
+    "items": [
+      {
+        "image": "assets/img/doctor-2.webp",
+        "imageAlt": "Foto dr. Ayla Maharani, Sp.A",
+        "badge": "Spesialis Anak",
+        "name": "dr. Ayla Maharani, Sp.A",
+        "specialty": "Spesialis Kesehatan Anak",
+        "schedule": "Senin, Rabu, Jumat — 09.00–14.00"
+      },
+      {
+        "image": "assets/img/doctor-3.webp",
+        "imageAlt": "Foto dr. Bima Aditya",
+        "badge": "Dokter Umum",
+        "name": "dr. Bima Aditya",
+        "specialty": "Kepala Poliklinik Umum",
+        "schedule": "Senin–Sabtu — 08.00–16.00"
+      },
+      {
+        "image": "assets/img/doctor-4.webp",
+        "imageAlt": "Foto dr. Keisha Nurhaliza, Sp.OG",
+        "badge": "Spesialis Kandungan",
+        "name": "dr. Keisha Nurhaliza, Sp.OG",
+        "specialty": "Spesialis Kandungan & Kesehatan Wanita",
+        "schedule": "Selasa, Kamis, Sabtu — 13.00–18.00"
+      }
+    ]
+  },
+  "steps": {
+    "eyebrow": "Alur Kunjungan",
+    "title": "Berobat jadi mudah dalam 3 langkah",
+    "description": "Dari pendaftaran sampai tindak lanjut — semuanya dirancang tanpa ribet.",
+    "items": [
+      {
+        "title": "Buat janji online",
+        "description": "Isi form janji temu atau hubungi WhatsApp. Pilih layanan, tanggal, dan jam yang paling nyaman untuk Anda."
+      },
+      {
+        "title": "Datang & periksa",
+        "description": "Tunjukkan kode konfirmasi di resepsionis. Waktu tunggu rata-rata di bawah 15 menit untuk pasien terjadwal."
+      },
+      {
+        "title": "Tindak lanjut terarah",
+        "description": "Hasil lab dan resep dikirim digital. Tim kami mengingatkan jadwal kontrol berikutnya lewat WhatsApp."
+      }
+    ]
+  },
+  "testimonials": {
+    "eyebrow": "Testimoni",
+    "title": "Cerita dari pasien kami",
+    "items": [
+      {
+        "quote": "Anak saya tadinya takut ke dokter, sekarang malah minta jadwal kontrol yang berikutnya. Bu Ayla sabar banget dan penjelasannya mudah dipahami.",
+        "initials": "SW",
+        "name": "Sari Wulandari",
+        "role": "Ibu pasien — Poliklinik Anak"
+      },
+      {
+        "quote": "Pendaftarannya cepat, tarif dijelaskan di depan, dan hasil lab bisa diakses dari HP. Jauh lebih praktis dibanding pengalaman saya di tempat lain.",
+        "initials": "BP",
+        "name": "Budi Prasetyo",
+        "role": "Pasien Medical Check-Up"
+      },
+      {
+        "quote": "Kontrol kehamilan dari trimester satu sampai melahirkan semua di Aras. Dr. Keisha dan timnya selalu responsif dan meyakinkan. Recommended untuk ibu hamil.",
+        "initials": "RH",
+        "name": "Rina Hartati",
+        "role": "Pasien Kandungan"
+      }
+    ]
+  },
+  "appointment": {
+    "eyebrow": "Janji Temu",
+    "title": "Jadwalkan kunjungan Anda hari ini",
+    "description": "Isi form di samping dan tim kami akan menghubungi Anda melalui WhatsApp untuk konfirmasi jadwal dalam 1×24 jam kerja.",
+    "benefits": [
+      {
+        "text": "Konfirmasi cepat di jam kerja"
+      },
+      {
+        "text": "Tanpa biaya pendaftaran"
+      },
+      {
+        "text": "Melayani BPJS & asuransi rekanan"
+      }
+    ],
+    "serviceOptions": [
+      {
+        "value": "poliklinik-umum",
+        "label": "Poliklinik Umum"
+      },
+      {
+        "value": "kesehatan-anak",
+        "label": "Kesehatan Anak"
+      },
+      {
+        "value": "kandungan",
+        "label": "Kandungan & Kesehatan Wanita"
+      },
+      {
+        "value": "klinik-jantung",
+        "label": "Klinik Jantung"
+      },
+      {
+        "value": "laboratorium",
+        "label": "Laboratorium & EMC"
+      },
+      {
+        "value": "mcu",
+        "label": "Medical Check-Up"
+      }
+    ],
+    "submitLabel": "Kirim Permintaan Janji",
+    "privacyNote": "Dengan mengirim form, Anda menyetujui pemrosesan data sesuai kebijakan privasi kami.",
+    "successTitle": "Permintaan terkirim!",
+    "successMessage": "Terima kasih. Tim kami akan menghubungi Anda melalui WhatsApp untuk konfirmasi jadwal dalam 1×24 jam kerja."
+  },
+  "footer": {
+    "about": "Layanan kesehatan keluarga terpercaya dengan dokter berpengalaman dan fasilitas modern sejak 2023.",
+    "hoursNote": "Layanan gawat darurat WhatsApp tersedia 24 jam.",
+    "copyrightName": "Klinik Aras Medical Center",
+    "hours": [
+      {
+        "day": "Senin – Jumat",
+        "time": "08.00 – 21.00"
+      },
+      {
+        "day": "Sabtu",
+        "time": "08.00 – 17.00"
+      },
+      {
+        "day": "Minggu",
+        "time": "09.00 – 14.00"
+      }
+    ],
+    "serviceLinks": [
+      {
+        "label": "Poliklinik Umum",
+        "href": "#layanan"
+      },
+      {
+        "label": "Kesehatan Anak",
+        "href": "#layanan"
+      },
+      {
+        "label": "Kandungan & Kesehatan Wanita",
+        "href": "#layanan"
+      },
+      {
+        "label": "Klinik Jantung",
+        "href": "#layanan"
+      },
+      {
+        "label": "Medical Check-Up",
+        "href": "#layanan"
+      }
+    ]
+  }
+}

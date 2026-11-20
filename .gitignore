@@ -1,0 +1,17 @@
+node_modules/
+.DS_Store
+*.log
+
+# Vercel
+.vercel/
+
+# Environment
+.env
+.env.*
+!.env.example
+
+# Generated at runtime by the admin panel (mode server lokal)
+content/backups/
+content/uploads/
+assets/img/uploads/
+content/*.tmp

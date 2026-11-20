@@ -1,0 +1,921 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Klinik Aras Medical Center — Layanan Kesehatan Keluarga Terpercaya</title>
+    <meta
+      name="description"
+      content="Klinik Aras Medical Center menyediakan layanan poliklinik, kesehatan anak, kandungan & kesehatan wanita, jantung, dan laboratorium dengan dokter berpengalaman. Buat janji temu online sekarang."
+    />
+    <meta name="theme-color" content="#ecfeff" />
+    <meta property="og:title" content="Klinik Aras Medical Center" />
+    <meta
+      property="og:description"
+      content="Layanan kesehatan keluarga terpercaya dengan dokter berpengalaman dan fasilitas modern."
+    />
+    <meta property="og:type" content="website" />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="assets/tw.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "MedicalClinic",
+        "name": "Klinik Aras Medical Center",
+        "medicalSpecialty": ["GeneralPractice", "Pediatric", "Gynecologic", "Cardiovascular"],
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Jl. Kesehatan No. 123",
+          "addressLocality": "Kota Anda",
+          "addressCountry": "ID"
+        },
+        "telephone": "+62-812-3456-7890",
+        "openingHours": "Mo-Sa 08:00-21:00"
+      }
+    </script>
+  </head>
+
+  <body class="min-h-screen bg-surface">
+    <a
+      href="#konten-utama"
+      class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-100 focus:rounded-full focus:bg-ink focus:px-5 focus:py-2.5 focus:text-white"
+      >Langsung ke konten utama</a
+    >
+
+    <!-- ================= HEADER ================= -->
+    <header
+      id="site-header"
+      class="fixed inset-x-0 top-0 z-50 transition-colors duration-300"
+    >
+      <div class="relative z-10 mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8">
+        <div
+          id="header-bar"
+          class="mt-3 flex items-center justify-between gap-4 rounded-full px-4 py-2.5 transition-all duration-300 sm:px-6"
+        >
+          <!-- Logo -->
+          <a href="#" class="flex shrink-0 items-center gap-2.5" aria-label="Klinik Aras Medical Center — beranda" data-cms-logo="brand">
+            <span
+              class="grid size-10 place-items-center rounded-2xl bg-primary text-white shadow-soft"
+              data-brand-mark
+              aria-hidden="true"
+            >
+              <svg class="size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 4v16M4 12h16" />
+              </svg>
+            </span>
+            <img class="hidden h-10 w-auto max-w-44 shrink-0 object-contain" data-brand-logo alt="" />
+            <span class="font-display leading-tight" data-brand-text>
+              <span class="block text-base font-bold text-ink sm:text-lg" data-cms="brand.name">Klinik Aras</span>
+              <span class="block text-[11px] font-medium tracking-[0.14em] text-primary uppercase" data-cms="brand.tagline">Medical Center</span>
+            </span>
+          </a>
+
+          <!-- Desktop nav -->
+          <nav class="hidden items-center gap-7 lg:flex" aria-label="Navigasi utama">
+            <a href="#layanan" class="nav-link">Layanan</a>
+            <a href="#kenapa-kami" class="nav-link">Kenapa Kami</a>
+            <a href="#dokter" class="nav-link">Dokter</a>
+            <a href="#alur" class="nav-link">Alur Kunjungan</a>
+            <a href="#testimoni" class="nav-link">Testimoni</a>
+          </nav>
+
+          <div class="flex items-center gap-2">
+            <a href="tel:+6281234567890" data-cms-href="contact.phoneHref" class="btn-ghost !px-4 max-sm:hidden">
+              <svg class="size-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
+              </svg>
+              <span data-cms="contact.phoneDisplay">(0812)&nbsp;3456&#8209;7890</span>
+            </a>
+            <a href="#janji-temu" class="btn-primary max-sm:hidden">Buat Janji</a>
+
+            <!-- Mobile menu button -->
+            <button
+              id="menu-btn"
+              type="button"
+              class="grid size-11 cursor-pointer place-items-center rounded-full border border-hairline bg-card text-ink shadow-soft lg:hidden"
+              aria-expanded="false"
+              aria-controls="mobile-menu"
+              aria-label="Buka menu navigasi"
+            >
+              <svg class="icon-open size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+                <path d="M4 7h16M4 12h16M4 17h16" />
+              </svg>
+              <svg class="icon-close hidden size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+                <path d="M6 6l12 12M18 6L6 18" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile menu panel -->
+      <div
+        id="mobile-menu"
+        class="fixed inset-x-0 top-0 bottom-0 hidden overflow-y-auto bg-card pt-20 pb-28 lg:hidden"
+      >
+        <nav class="container-x flex flex-col gap-1 py-5" aria-label="Navigasi seluler">
+          <a href="#layanan" class="rounded-xl px-4 py-3 font-medium text-ink hover:bg-primary/10">Layanan</a>
+          <a href="#kenapa-kami" class="rounded-xl px-4 py-3 font-medium text-ink hover:bg-primary/10">Kenapa Kami</a>
+          <a href="#dokter" class="rounded-xl px-4 py-3 font-medium text-ink hover:bg-primary/10">Dokter</a>
+          <a href="#alur" class="rounded-xl px-4 py-3 font-medium text-ink hover:bg-primary/10">Alur Kunjungan</a>
+          <a href="#testimoni" class="rounded-xl px-4 py-3 font-medium text-ink hover:bg-primary/10">Testimoni</a>
+          <div class="mt-3 grid gap-2">
+            <a href="#janji-temu" class="btn-primary w-full">Buat Janji Temu</a>
+            <a href="tel:+6281234567890" data-cms-href="contact.phoneHref" class="btn-ghost w-full">Telepon:&nbsp;<span data-cms="contact.phoneDisplay">(0812)&nbsp;3456&#8209;7890</span></a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main id="konten-utama">
+      <!-- ================= HERO ================= -->
+      <section class="relative overflow-hidden pt-32 pb-14 md:pt-40 md:pb-20 lg:pt-44">
+        <!-- decorative background -->
+        <div class="pointer-events-none absolute inset-0 -z-10" aria-hidden="true">
+          <div class="absolute -top-32 -right-24 size-[28rem] rounded-full bg-primary/10 blur-3xl"></div>
+          <div class="absolute top-40 -left-32 size-96 rounded-full bg-accent/10 blur-3xl"></div>
+          <svg class="absolute inset-x-0 bottom-0 h-40 w-full text-card" viewBox="0 0 1440 120" fill="currentColor" preserveAspectRatio="none">
+            <path d="M0 120h1440V60c-240 40-480 60-720 45S240 45 0 70v50z" />
+          </svg>
+        </div>
+
+        <div class="container-x grid items-center gap-12 lg:grid-cols-[1.05fr_0.95fr]">
+          <!-- Copy -->
+          <div class="max-w-xl">
+            <p class="chip">
+              <svg class="size-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M20 6 9 17l-5-5" />
+              </svg>
+              <span data-cms="hero.badge">Terakreditasi &amp; Melayani BPJS</span>
+            </p>
+
+            <h1 class="mt-5 text-4xl leading-[1.1] font-bold sm:text-5xl lg:text-[3.4rem]">
+              <span data-cms="hero.titleLead">Kesehatan keluarga Anda,</span>
+              <span class="text-primary" data-cms="hero.titleHighlight">prioritas kami.</span>
+            </h1>
+
+            <p class="mt-5 text-lg text-body" data-cms="hero.description">
+              Klinik Aras Medical Center menghadirkan layanan kesehatan menyeluruh
+              dengan dokter berpengalaman, fasilitas modern, dan pelayanan yang hangat
+              — dari pemeriksaan rutin hingga penanganan khusus.
+            </p>
+
+            <div class="mt-8 flex flex-wrap items-center gap-3">
+              <a href="#janji-temu" data-cms-href="hero.primaryCta.href" class="btn-accent">
+                <span data-cms="hero.primaryCta.label">Buat Janji Temu</span>
+                <svg class="size-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M5 12h14M13 6l6 6-6 6" />
+                </svg>
+              </a>
+              <a href="#layanan" data-cms-href="hero.secondaryCta.href" class="btn-ghost" data-cms="hero.secondaryCta.label">Lihat Layanan</a>
+            </div>
+
+            <!-- trust row -->
+            <dl class="mt-10 grid max-w-md grid-cols-3 gap-6 border-t border-hairline pt-6" data-cms-list="hero.stats">
+              <div data-cms-item>
+                <dt class="order-2 text-xs text-body" data-field="label">Tahun melayani</dt>
+                <dd class="font-display text-2xl font-bold text-ink"><span data-field="value">15</span><span class="text-primary" data-field="suffix">+</span></dd>
+              </div>
+              <div data-cms-item>
+                <dt class="order-2 text-xs text-body" data-field="label">Pasien per bulan</dt>
+                <dd class="font-display text-2xl font-bold text-ink"><span data-field="value">3.5</span><span class="text-primary" data-field="suffix">rb</span></dd>
+              </div>
+              <div data-cms-item>
+                <dt class="order-2 text-xs text-body" data-field="label">Rating pasien</dt>
+                <dd class="font-display text-2xl font-bold text-ink"><span data-field="value">4.9</span><span class="text-primary" data-field="suffix">/5</span></dd>
+              </div>
+            </dl>
+          </div>
+
+          <!-- Visual -->
+          <div class="relative mx-auto w-full max-w-md lg:max-w-none">
+            <div class="relative overflow-hidden rounded-[2rem] shadow-lift">
+              <img
+                src="assets/img/hero-doctor.webp"
+                alt="Dokter Klinik Aras Medical Center menyapa pasien dengan ramah"
+                data-cms-image="hero.image"
+                data-cms-alt="hero.imageAlt"
+                class="aspect-4/5 w-full object-cover sm:aspect-square lg:aspect-4/5"
+                width="720"
+                height="900"
+                loading="eager"
+                fetchpriority="high"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-ink/30 via-transparent to-transparent" aria-hidden="true"></div>
+            </div>
+
+            <!-- floating card: jam buka -->
+            <div class="animate-float absolute -bottom-5 left-3 flex items-center gap-3 rounded-2xl border border-hairline bg-card/95 px-4 py-3 shadow-lift backdrop-blur sm:left-6">
+              <span class="grid size-10 shrink-0 place-items-center rounded-xl bg-primary/10 text-primary" aria-hidden="true">
+                <svg class="size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="9" />
+                  <path d="M12 7v5l3 2" />
+                </svg>
+              </span>
+              <div class="text-sm leading-tight">
+                <p class="font-semibold text-ink" data-cms="hero.opening.title">Buka Hari Ini</p>
+                <p class="text-body" data-cms="hero.opening.hours">08.00 – 21.00 WIB</p>
+              </div>
+            </div>
+
+            <!-- floating card: rating -->
+            <div class="animate-float float-delayed absolute -top-4 right-2 flex items-center gap-2.5 rounded-2xl border border-hairline bg-card/95 px-4 py-3 shadow-lift backdrop-blur sm:right-6" aria-hidden="true">
+              <svg class="size-6 text-amber-400" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2l2.9 6.26 6.6.6-5 4.4 1.5 6.5L12 16.3 5.99 19.76l1.5-6.5-5-4.4 6.61-.6L12 2z" />
+              </svg>
+              <div class="text-sm leading-tight">
+                <p class="font-semibold text-ink" data-cms="hero.rating.score">4.9 / 5.0</p>
+                <p class="text-body" data-cms="hero.rating.reviews">1.200+ ulasan Google</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= LAYANAN ================= -->
+      <section id="layanan" class="section-pad scroll-mt-24">
+        <div class="container-x">
+          <div class="reveal mx-auto max-w-2xl text-center">
+            <p class="eyebrow" data-cms="services.eyebrow">Layanan Kami</p>
+            <h2 class="mt-2 text-3xl font-bold sm:text-4xl" data-cms="services.title">Perawatan lengkap untuk setiap kebutuhan</h2>
+            <p class="mt-4 text-body" data-cms="services.description">
+              Enam pilar layanan utama yang didukung dokter spesialis dan peralatan modern,
+              dalam satu tempat.
+            </p>
+          </div>
+
+          <ul class="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3" data-cms-list="services.items">
+            <li class="reveal card group p-6 transition duration-300 hover:-translate-y-1 hover:shadow-lift" data-cms-item>
+              <span class="grid size-12 place-items-center rounded-2xl bg-primary/10 text-primary transition group-hover:bg-primary group-hover:text-white" data-field-icon="icon" aria-hidden="true">
+                <svg class="size-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 21s-7.5-4.6-9.5-9.1C1 8 3 5 6.5 5c2 0 3.6 1.2 4.5 2.5.9-1.3 2.5-2.5 4.5-2.5C19 5 21 8 20.5 11.9 19.5 16.4 12 21 12 21z" />
+                </svg>
+              </span>
+              <h3 class="mt-5 text-lg font-semibold" data-field="title">Poliklinik Umum</h3>
+              <p class="mt-2 text-sm leading-relaxed" data-field="description">
+                Pemeriksaan umum, konsultasi keluhan akut–kronis, dan pengobatan lanjutan
+                oleh dokter umum berpengalaman.
+              </p>
+            </li>
+            <li class="reveal card group p-6 transition duration-300 hover:-translate-y-1 hover:shadow-lift" data-cms-item>
+              <span class="grid size-12 place-items-center rounded-2xl bg-primary/10 text-primary transition group-hover:bg-primary group-hover:text-white" data-field-icon="icon" aria-hidden="true">
+                <svg class="size-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="9" cy="7" r="3" />
+                  <path d="M3 21v-2a5 5 0 0 1 5-5h2a5 5 0 0 1 5 5v2" />
+                  <path d="M16 3.5c1.2.5 2 1.7 2 3M19.5 2c1.8 1 3 2.9 3 5" />
+                </svg>
+              </span>
+              <h3 class="mt-5 text-lg font-semibold" data-field="title">Kesehatan Anak</h3>
+              <p class="mt-2 text-sm leading-relaxed" data-field="description">
+                Pantau tumbuh kembang, imunisasi, dan konsultasi kesehatan anak
+                dengan dokter spesialis anak.
+              </p>
+            </li>
+            <li class="reveal card group p-6 transition duration-300 hover:-translate-y-1 hover:shadow-lift" data-cms-item>
+              <span class="grid size-12 place-items-center rounded-2xl bg-primary/10 text-primary transition group-hover:bg-primary group-hover:text-white" data-field-icon="icon" aria-hidden="true">
+                <svg class="size-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="6" r="3" />
+                  <circle cx="5.5" cy="15.5" r="2.5" />
+                  <circle cx="18.5" cy="15.5" r="2.5" />
+                  <path d="M12 9v3m0 0-4.3 2.4M15 12l3.1 2M12 12l4.3 2.4M12 12l-4.3 2.4" />
+                </svg>
+              </span>
+              <h3 class="mt-5 text-lg font-semibold" data-field="title">Kandungan &amp; Kesehatan Wanita</h3>
+              <p class="mt-2 text-sm leading-relaxed" data-field="description">
+                Pemeriksaan kehamilan, program kehamilan, USG 4D, dan konsultasi
+                kesehatan reproduksi wanita.
+              </p>
+            </li>
+            <li class="reveal card group p-6 transition duration-300 hover:-translate-y-1 hover:shadow-lift" data-cms-item>
+              <span class="grid size-12 place-items-center rounded-2xl bg-primary/10 text-primary transition group-hover:bg-primary group-hover:text-white" data-field-icon="icon" aria-hidden="true">
+                <svg class="size-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 21s-7.5-4.6-9.5-9.1C1 8 3 5 6.5 5c2 0 3.6 1.2 4.5 2.5.9-1.3 2.5-2.5 4.5-2.5C19 5 21 8 20.5 11.9 19.5 16.4 12 21 12 21z" />
+                  <path d="M4.5 12h4l1.5-3 2.5 6 1.5-3h5.5" />
+                </svg>
+              </span>
+              <h3 class="mt-5 text-lg font-semibold" data-field="title">Klinik Jantung</h3>
+              <p class="mt-2 text-sm leading-relaxed" data-field="description">
+                Skrining risiko jantung, EKG, dan konsultasi pola hidup sehat
+                dengan dokter spesialis jantung.
+              </p>
+            </li>
+            <li class="reveal card group p-6 transition duration-300 hover:-translate-y-1 hover:shadow-lift" data-cms-item>
+              <span class="grid size-12 place-items-center rounded-2xl bg-primary/10 text-primary transition group-hover:bg-primary group-hover:text-white" data-field-icon="icon" aria-hidden="true">
+                <svg class="size-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M9 2v6l-5.3 8.6A3 3 0 0 0 6.3 21h11.4a3 3 0 0 0 2.6-4.4L15 8V2" />
+                  <path d="M7 2h10M8 15h8" />
+                </svg>
+              </span>
+              <h3 class="mt-5 text-lg font-semibold" data-field="title">Laboratorium &amp; EMC</h3>
+              <p class="mt-2 text-sm leading-relaxed" data-field="description">
+                Pemeriksaan darah lengkap, gula, kolesterol, dan tes mendekam (EMC)
+                dengan hasil cepat dan akurat.
+              </p>
+            </li>
+            <li class="reveal card group p-6 transition duration-300 hover:-translate-y-1 hover:shadow-lift" data-cms-item>
+              <span class="grid size-12 place-items-center rounded-2xl bg-primary/10 text-primary transition group-hover:bg-primary group-hover:text-white" data-field-icon="icon" aria-hidden="true">
+                <svg class="size-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M20 12a8 8 0 1 0-16 0v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-6z" />
+                  <path d="M8 12h8M12 8v8" />
+                </svg>
+              </span>
+              <h3 class="mt-5 text-lg font-semibold" data-field="title">Medical Check-Up</h3>
+              <p class="mt-2 text-sm leading-relaxed" data-field="description">
+                Paket MCU individu dan perusahaan untuk deteksi dini, lengkap dengan
+                rekomendasi gaya hidup personal.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ================= KENAPA KAMI ================= -->
+      <section id="kenapa-kami" class="section-pad scroll-mt-24 bg-card">
+        <div class="container-x grid items-center gap-12 lg:grid-cols-2">
+          <div class="reveal relative order-2 lg:order-1">
+            <div class="overflow-hidden rounded-[2rem] shadow-lift">
+              <img
+                src="assets/img/consult.webp"
+                alt="Dokter menjelaskan hasil pemeriksaan kepada pasien"
+                data-cms-image="why.image"
+                data-cms-alt="why.imageAlt"
+                class="aspect-4/3 w-full object-cover"
+                width="1000"
+                height="750"
+                loading="lazy"
+              />
+            </div>
+            <div class="absolute -right-3 -bottom-6 rounded-2xl border border-hairline bg-card px-5 py-4 shadow-lift sm:right-6">
+              <p class="font-display text-3xl font-bold text-primary" data-cms="why.highlight.value">98%</p>
+              <p class="text-sm text-body" data-cms="why.highlight.label">pasien merasa puas dengan pelayanan kami</p>
+            </div>
+          </div>
+
+          <div class="reveal order-1 lg:order-2">
+            <p class="eyebrow" data-cms="why.eyebrow">Kenapa Klinik Aras</p>
+            <h2 class="mt-2 text-3xl font-bold sm:text-4xl" data-cms="why.title">
+              Pendekatan yang berpusat pada pasien
+            </h2>
+            <p class="mt-4 text-body" data-cms="why.description">
+              Kami percaya layanan kesehatan yang baik dimulai dari mendengarkan.
+              Setiap kunjungan dirancang agar Anda merasa didengar, dipahami, dan
+              mendapatkan rencana perawatan yang jelas.
+            </p>
+
+            <ul class="mt-8 grid gap-5" data-cms-list="why.items">
+              <li class="flex gap-4" data-cms-item>
+                <span class="grid size-11 shrink-0 place-items-center rounded-2xl bg-accent/10 text-accent" aria-hidden="true">
+                  <svg class="size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M20 6 9 17l-5-5" />
+                  </svg>
+                </span>
+                <div>
+                  <h3 class="font-semibold text-ink" data-field="title">Dokter berpengalaman &amp; bersertifikasi</h3>
+                  <p class="text-sm" data-field="description">Tim dokter spesialis dengan rekam jejak lebih dari 15 tahun.</p>
+                </div>
+              </li>
+              <li class="flex gap-4" data-cms-item>
+                <span class="grid size-11 shrink-0 place-items-center rounded-2xl bg-accent/10 text-accent" aria-hidden="true">
+                  <svg class="size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M20 6 9 17l-5-5" />
+                  </svg>
+                </span>
+                <div>
+                  <h3 class="font-semibold text-ink" data-field="title">Pendaftaran &amp; rekam medis digital</h3>
+                  <p class="text-sm" data-field="description">Antri lebih singkat, riwayat medis tersimpan aman dan rapi.</p>
+                </div>
+              </li>
+              <li class="flex gap-4" data-cms-item>
+                <span class="grid size-11 shrink-0 place-items-center rounded-2xl bg-accent/10 text-accent" aria-hidden="true">
+                  <svg class="size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M20 6 9 17l-5-5" />
+                  </svg>
+                </span>
+                <div>
+                  <h3 class="font-semibold text-ink" data-field="title">Tarif transparan &amp; melayani BPJS</h3>
+                  <p class="text-sm" data-field="description">Estimasi biaya dijelaskan sebelum pemeriksaan — tanpa biaya tersembunyi.</p>
+                </div>
+              </li>
+              <li class="flex gap-4" data-cms-item>
+                <span class="grid size-11 shrink-0 place-items-center rounded-2xl bg-accent/10 text-accent" aria-hidden="true">
+                  <svg class="size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M20 6 9 17l-5-5" />
+                  </svg>
+                </span>
+                <div>
+                  <h3 class="font-semibold text-ink" data-field="title">Layanan darurat 24 jam</h3>
+                  <p class="text-sm" data-field="description">Konsultasi gawat darurat lewat WhatsApp kapan pun Anda butuhkan.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= DOKTER ================= -->
+      <section id="dokter" class="section-pad scroll-mt-24">
+        <div class="container-x">
+          <div class="reveal flex flex-wrap items-end justify-between gap-4">
+            <div class="max-w-xl">
+              <p class="eyebrow" data-cms="doctors.eyebrow">Tim Medis</p>
+              <h2 class="mt-2 text-3xl font-bold sm:text-4xl" data-cms="doctors.title">Dokter yang merawat Anda</h2>
+              <p class="mt-3 text-body" data-cms="doctors.description">
+                Ditemani oleh tenaga medis profesional yang berkomitmen pada
+                perawatan yang berkualitas dan penuh empati.
+              </p>
+            </div>
+          </div>
+
+          <ul class="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3" data-cms-list="doctors.items">
+            <li class="reveal card group overflow-hidden" data-cms-item>
+              <div class="relative">
+                <img
+                  src="assets/img/doctor-2.webp"
+                  alt="Foto dr. Ayla Maharani, Sp.A"
+                  data-field-src="image"
+                  data-field-alt="imageAlt"
+                  class="aspect-4/5 w-full object-cover transition duration-500 group-hover:scale-105"
+                  width="700"
+                  height="875"
+                  loading="lazy"
+                />
+                <span class="absolute top-4 left-4 rounded-full bg-card/90 px-3 py-1 text-xs font-semibold text-ink backdrop-blur" data-field="badge">
+                  Spesialis Anak
+                </span>
+              </div>
+              <div class="p-5">
+                <h3 class="font-semibold" data-field="name">dr. Ayla Maharani, Sp.A</h3>
+                <p class="mt-1 text-sm text-body" data-field="specialty">Spesialis Kesehatan Anak</p>
+                <p class="mt-3 text-sm text-body" data-field="schedule">Senin, Rabu, Jumat — 09.00–14.00</p>
+              </div>
+            </li>
+
+            <li class="reveal card group overflow-hidden" data-cms-item>
+              <div class="relative">
+                <img
+                  src="assets/img/doctor-3.webp"
+                  alt="Foto dr. Bima Aditya"
+                  data-field-src="image"
+                  data-field-alt="imageAlt"
+                  class="aspect-4/5 w-full object-cover transition duration-500 group-hover:scale-105"
+                  width="700"
+                  height="875"
+                  loading="lazy"
+                />
+                <span class="absolute top-4 left-4 rounded-full bg-card/90 px-3 py-1 text-xs font-semibold text-ink backdrop-blur" data-field="badge">
+                  Dokter Umum
+                </span>
+              </div>
+              <div class="p-5">
+                <h3 class="font-semibold" data-field="name">dr. Bima Aditya</h3>
+                <p class="mt-1 text-sm text-body" data-field="specialty">Kepala Poliklinik Umum</p>
+                <p class="mt-3 text-sm text-body" data-field="schedule">Senin–Sabtu — 08.00–16.00</p>
+              </div>
+            </li>
+
+            <li class="reveal card group overflow-hidden" data-cms-item>
+              <div class="relative">
+                <img
+                  src="assets/img/doctor-4.webp"
+                  alt="Foto dr. Keisha Nurhaliza, Sp.OG"
+                  data-field-src="image"
+                  data-field-alt="imageAlt"
+                  class="aspect-4/5 w-full object-cover transition duration-500 group-hover:scale-105"
+                  width="700"
+                  height="875"
+                  loading="lazy"
+                />
+                <span class="absolute top-4 left-4 rounded-full bg-card/90 px-3 py-1 text-xs font-semibold text-ink backdrop-blur" data-field="badge">
+                  Spesialis Kandungan
+                </span>
+              </div>
+              <div class="p-5">
+                <h3 class="font-semibold" data-field="name">dr. Keisha Nurhaliza, Sp.OG</h3>
+                <p class="mt-1 text-sm text-body" data-field="specialty">Spesialis Kandungan &amp; Kesehatan Wanita</p>
+                <p class="mt-3 text-sm text-body" data-field="schedule">Selasa, Kamis, Sabtu — 13.00–18.00</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ================= ALUR KUNJUNGAN ================= -->
+      <section id="alur" class="section-pad scroll-mt-24 bg-card">
+        <div class="container-x">
+          <div class="reveal mx-auto max-w-2xl text-center">
+            <p class="eyebrow" data-cms="steps.eyebrow">Alur Kunjungan</p>
+            <h2 class="mt-2 text-3xl font-bold sm:text-4xl" data-cms="steps.title">Berobat jadi mudah dalam 3 langkah</h2>
+            <p class="mt-4 text-body" data-cms="steps.description">
+              Dari pendaftaran sampai tindak lanjut — semuanya dirancang tanpa ribet.
+            </p>
+          </div>
+
+          <ol class="reveal mt-12 grid gap-6 md:grid-cols-3" data-cms-list="steps.items">
+            <li class="card relative p-6" data-cms-item>
+              <span class="font-display text-5xl font-bold text-primary/15" data-step-number aria-hidden="true">01</span>
+              <h3 class="mt-2 text-lg font-semibold" data-field="title">Buat janji online</h3>
+              <p class="mt-2 text-sm" data-field="description">
+                Isi form janji temu atau hubungi WhatsApp. Pilih layanan, tanggal,
+                dan jam yang paling nyaman untuk Anda.
+              </p>
+            </li>
+            <li class="card relative p-6" data-cms-item>
+              <span class="font-display text-5xl font-bold text-primary/15" data-step-number aria-hidden="true">02</span>
+              <h3 class="mt-2 text-lg font-semibold" data-field="title">Datang &amp; periksa</h3>
+              <p class="mt-2 text-sm" data-field="description">
+                Tunjukkan kode konfirmasi di resepsionis. Waktu tunggu rata-rata
+                di bawah 15 menit untuk pasien terjadwal.
+              </p>
+            </li>
+            <li class="card relative p-6" data-cms-item>
+              <span class="font-display text-5xl font-bold text-primary/15" data-step-number aria-hidden="true">03</span>
+              <h3 class="mt-2 text-lg font-semibold" data-field="title">Tindak lanjut terarah</h3>
+              <p class="mt-2 text-sm" data-field="description">
+                Hasil lab dan resep dikirim digital. Tim kami mengingatkan jadwal
+                kontrol berikutnya lewat WhatsApp.
+              </p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- ================= TESTIMONI ================= -->
+      <section id="testimoni" class="section-pad scroll-mt-24">
+        <div class="container-x">
+          <div class="reveal mx-auto max-w-2xl text-center">
+            <p class="eyebrow" data-cms="testimonials.eyebrow">Testimoni</p>
+            <h2 class="mt-2 text-3xl font-bold sm:text-4xl" data-cms="testimonials.title">Cerita dari pasien kami</h2>
+          </div>
+
+          <section
+            id="testimonial-carousel"
+            class="reveal mx-auto mt-12 max-w-3xl"
+            aria-roledescription="carousel"
+            aria-label="Testimoni pasien"
+          >
+            <div class="overflow-hidden rounded-xl2 border border-hairline bg-card shadow-soft">
+              <div data-track class="carousel-track flex transition-transform duration-500 ease-out" data-cms-list="testimonials.items">
+                <div class="min-w-full p-8 sm:p-10" role="tabpanel" aria-label="Testimoni 1 dari 3" data-cms-item data-item-label="Testimoni">
+                  <blockquote>
+                    <p class="text-lg leading-relaxed text-ink italic">
+                      &ldquo;<span data-field="quote">Anak saya tadinya takut ke dokter, sekarang malah minta
+                      jadwal kontrol yang berikutnya. Bu Ayla sabar banget dan
+                      penjelasannya mudah dipahami.</span>&rdquo;
+                    </p>
+                  </blockquote>
+                  <footer class="mt-6 flex items-center gap-3">
+                    <span class="grid size-11 place-items-center rounded-full bg-primary/10 font-semibold text-primary" data-field="initials" aria-hidden="true">SW</span>
+                    <div>
+                      <p class="font-semibold text-ink" data-name data-field="name">Sari Wulandari</p>
+                      <p class="text-sm text-body" data-field="role">Ibu pasien — Poliklinik Anak</p>
+                    </div>
+                  </footer>
+                </div>
+                <div class="min-w-full p-8 sm:p-10" role="tabpanel" aria-label="Testimoni 2 dari 3" data-cms-item data-item-label="Testimoni">
+                  <blockquote>
+                    <p class="text-lg leading-relaxed text-ink italic">
+                      &ldquo;<span data-field="quote">Pendaftarannya cepat, tarif dijelaskan di depan, dan hasil
+                      lab bisa diakses dari HP. Jauh lebih praktis dibanding
+                      pengalaman saya di tempat lain.</span>&rdquo;
+                    </p>
+                  </blockquote>
+                  <footer class="mt-6 flex items-center gap-3">
+                    <span class="grid size-11 place-items-center rounded-full bg-primary/10 font-semibold text-primary" data-field="initials" aria-hidden="true">BP</span>
+                    <div>
+                      <p class="font-semibold text-ink" data-name data-field="name">Budi Prasetyo</p>
+                      <p class="text-sm text-body" data-field="role">Pasien Medical Check-Up</p>
+                    </div>
+                  </footer>
+                </div>
+                <div class="min-w-full p-8 sm:p-10" role="tabpanel" aria-label="Testimoni 3 dari 3" data-cms-item data-item-label="Testimoni">
+                  <blockquote>
+                    <p class="text-lg leading-relaxed text-ink italic">
+                      &ldquo;<span data-field="quote">Kontrol kehamilan dari trimester satu sampai melahirkan
+                      semua di Aras. Dr. Keisha dan timnya selalu responsif dan
+                      meyakinkan. Recommended untuk ibu hamil.</span>&rdquo;
+                    </p>
+                  </blockquote>
+                  <footer class="mt-6 flex items-center gap-3">
+                    <span class="grid size-11 place-items-center rounded-full bg-primary/10 font-semibold text-primary" data-field="initials" aria-hidden="true">RH</span>
+                    <div>
+                      <p class="font-semibold text-ink" data-name data-field="name">Rina Hartati</p>
+                      <p class="text-sm text-body" data-field="role">Pasien Kandungan</p>
+                    </div>
+                  </footer>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-6 flex items-center justify-center gap-4">
+              <button
+                type="button"
+                data-prev
+                class="grid size-11 cursor-pointer place-items-center rounded-full border border-hairline bg-card text-ink shadow-soft transition hover:border-primary/40 hover:bg-primary/5"
+                aria-label="Testimoni sebelumnya"
+              >
+                <svg class="size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M15 6l-6 6 6 6" />
+                </svg>
+              </button>
+              <div data-dots class="flex items-center gap-2" role="tablist" aria-label="Pilih testimoni"></div>
+              <button
+                type="button"
+                data-next
+                class="grid size-11 cursor-pointer place-items-center rounded-full border border-hairline bg-card text-ink shadow-soft transition hover:border-primary/40 hover:bg-primary/5"
+                aria-label="Testimoni berikutnya"
+              >
+                <svg class="size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M9 6l6 6-6 6" />
+                </svg>
+              </button>
+              <button
+                type="button"
+                data-pause
+                aria-pressed="false"
+                class="ml-2 grid size-11 cursor-pointer place-items-center rounded-full border border-hairline bg-card text-ink shadow-soft transition hover:border-primary/40 hover:bg-primary/5"
+                aria-label="Jeda putar otomatis"
+              >
+                <svg data-pause-label class="size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+                  <path d="M9 5v14M15 5v14" />
+                </svg>
+                <svg data-play-label class="hidden size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M7 5l12 7-12 7V5z" />
+                </svg>
+              </button>
+            </div>
+
+            <p class="sr-only" aria-live="polite"></p>
+          </section>
+        </div>
+      </section>
+
+      <!-- ================= CTA + FORM ================= -->
+      <section id="janji-temu" class="section-pad scroll-mt-24">
+        <div class="container-x">
+          <div class="reveal relative overflow-hidden rounded-[2rem] bg-ink px-6 py-12 shadow-lift sm:px-10 lg:px-14 lg:py-16">
+            <div class="pointer-events-none absolute inset-0" aria-hidden="true">
+              <div class="absolute -top-24 -right-16 size-72 rounded-full bg-primary/20 blur-3xl"></div>
+              <div class="absolute -bottom-24 -left-16 size-72 rounded-full bg-accent/20 blur-3xl"></div>
+            </div>
+
+            <div class="relative grid gap-10 lg:grid-cols-[1fr_1.1fr] lg:items-center">
+              <div>
+                <p class="text-sm font-semibold tracking-[0.18em] text-primary-light uppercase" data-cms="appointment.eyebrow">Janji Temu</p>
+                <h2 class="mt-2 text-3xl font-bold text-white sm:text-4xl" data-cms="appointment.title">
+                  Jadwalkan kunjungan Anda hari ini
+                </h2>
+                <p class="mt-4 max-w-md text-sky-100/90" data-cms="appointment.description">
+                  Isi form di samping dan tim kami akan menghubungi Anda melalui
+                  WhatsApp untuk konfirmasi jadwal dalam 1×24 jam kerja.
+                </p>
+                <ul class="mt-6 grid gap-3 text-sm text-sky-100/90" data-cms-list="appointment.benefits">
+                  <li class="flex items-center gap-2.5" data-cms-item>
+                    <svg class="size-4 text-accent" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg>
+                    <span data-field="text">Konfirmasi cepat di jam kerja</span>
+                  </li>
+                  <li class="flex items-center gap-2.5" data-cms-item>
+                    <svg class="size-4 text-accent" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg>
+                    <span data-field="text">Tanpa biaya pendaftaran</span>
+                  </li>
+                  <li class="flex items-center gap-2.5" data-cms-item>
+                    <svg class="size-4 text-accent" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg>
+                    <span data-field="text">Melayani BPJS &amp; asuransi rekanan</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur sm:p-8">
+                <form id="appointment-form" novalidate class="grid gap-5">
+                  <div>
+                    <label for="field-name" class="mb-1.5 block text-sm font-medium text-sky-50">Nama lengkap</label>
+                    <input
+                      id="field-name"
+                      name="name"
+                      type="text"
+                      autocomplete="name"
+                      required
+                      data-validate
+                      data-label="Nama lengkap"
+                      data-describedby="field-name-error"
+                      placeholder="Contoh: Andi Wijaya"
+                      class="w-full rounded-xl border border-white/15 bg-white/10 px-4 py-3 text-white placeholder-sky-200/50 focus:border-primary-light focus:ring-2 focus:ring-primary-light"
+                      aria-describedby="field-name-error"
+                    />
+                    <p id="field-name-error" class="mt-1.5 hidden text-sm font-medium text-red-300" role="alert"></p>
+                  </div>
+
+                  <div class="grid gap-5 sm:grid-cols-2">
+                    <div>
+                      <label for="field-phone" class="mb-1.5 block text-sm font-medium text-sky-50">Nomor WhatsApp</label>
+                      <input
+                        id="field-phone"
+                        name="phone"
+                        type="tel"
+                        inputmode="tel"
+                        autocomplete="tel"
+                        required
+                        data-validate
+                        data-label="Nomor WhatsApp"
+                        data-describedby="field-phone-error"
+                        placeholder="0812xxxxxxx"
+                        class="w-full rounded-xl border border-white/15 bg-white/10 px-4 py-3 text-white placeholder-sky-200/50 focus:border-primary-light focus:ring-2 focus:ring-primary-light"
+                        aria-describedby="field-phone-error"
+                      />
+                      <p id="field-phone-error" class="mt-1.5 hidden text-sm font-medium text-red-300" role="alert"></p>
+                    </div>
+                    <div>
+                      <label for="field-date" class="mb-1.5 block text-sm font-medium text-sky-50">Tanggal kunjungan</label>
+                      <input
+                        id="field-date"
+                        name="date"
+                        type="date"
+                        required
+                        data-validate
+                        data-label="Tanggal kunjungan"
+                        data-describedby="field-date-error"
+                        class="w-full rounded-xl border border-white/15 bg-white/10 px-4 py-3 text-white focus:border-primary-light focus:ring-2 focus:ring-primary-light"
+                        aria-describedby="field-date-error"
+                      />
+                      <p id="field-date-error" class="mt-1.5 hidden text-sm font-medium text-red-300" role="alert"></p>
+                    </div>
+                  </div>
+
+                  <div>
+                    <label for="field-service" class="mb-1.5 block text-sm font-medium text-sky-50">Layanan</label>
+                    <select
+                      id="field-service"
+                      name="service"
+                      required
+                      data-validate
+                      data-label="Layanan"
+                      data-describedby="field-service-error"
+                      data-cms-options="appointment.serviceOptions"
+                      class="w-full cursor-pointer rounded-xl border border-white/15 bg-white/10 px-4 py-3 text-white focus:border-primary-light focus:ring-2 focus:ring-primary-light"
+                      aria-describedby="field-service-error"
+                    >
+                      <option value="" class="text-ink">Pilih layanan…</option>
+                      <option value="poliklinik-umum" class="text-ink">Poliklinik Umum</option>
+                      <option value="kesehatan-anak" class="text-ink">Kesehatan Anak</option>
+                      <option value="kandungan" class="text-ink">Kandungan &amp; Kesehatan Wanita</option>
+                      <option value="klinik-jantung" class="text-ink">Klinik Jantung</option>
+                      <option value="laboratorium" class="text-ink">Laboratorium &amp; EMC</option>
+                      <option value="mcu" class="text-ink">Medical Check-Up</option>
+                    </select>
+                    <p id="field-service-error" class="mt-1.5 hidden text-sm font-medium text-red-300" role="alert"></p>
+                  </div>
+
+                  <div id="error-summary" class="hidden rounded-xl border border-red-400/40 bg-red-500/15 p-4" tabindex="-1" role="alert" aria-labelledby="error-summary-title">
+                    <p id="error-summary-title" class="font-semibold text-red-200">Mohon periksa kembali:</p>
+                    <ul class="mt-2 list-inside list-disc space-y-1 text-sm text-red-100"></ul>
+                  </div>
+
+                  <button type="submit" class="btn-accent w-full !py-3.5">
+                    <span data-cms="appointment.submitLabel">Kirim Permintaan Janji</span>
+                    <svg class="size-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M5 12h14M13 6l6 6-6 6" />
+                    </svg>
+                  </button>
+                  <p class="text-center text-xs text-sky-200/70" data-cms="appointment.privacyNote">
+                    Dengan mengirim form, Anda menyetujui pemrosesan data sesuai kebijakan privasi kami.
+                  </p>
+                </form>
+
+                <div id="form-success" hidden tabindex="-1" role="status">
+                  <div class="py-6 text-center">
+                    <span class="mx-auto grid size-14 place-items-center rounded-full bg-emerald-400/20 text-emerald-300" aria-hidden="true">
+                      <svg class="size-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M20 6 9 17l-5-5" />
+                      </svg>
+                    </span>
+                    <h3 class="mt-4 text-xl font-bold text-white" data-cms="appointment.successTitle">Permintaan terkirim!</h3>
+                    <p class="mx-auto mt-2 max-w-sm text-sm text-sky-100/90" data-cms="appointment.successMessage">
+                      Terima kasih. Tim kami akan menghubungi Anda melalui WhatsApp
+                      untuk konfirmasi jadwal dalam 1×24 jam kerja.
+                    </p>
+                    <a
+                      id="form-success-wa"
+                      href="https://wa.me/"
+                      target="_blank"
+                      rel="noopener"
+                      class="btn-accent mt-5"
+                    >
+                      Buka WhatsApp
+                      <svg class="size-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M21 11.5a8.5 8.5 0 0 1-12.6 7.4L3 21l2.1-5.4A8.5 8.5 0 1 1 21 11.5z" />
+                        <path d="M8.5 9.5c.5 2.5 2.5 4.5 5 5l1-1.5 2 1-1 2c-3.5.5-7.5-3-8-7l2-1 1 1z" />
+                      </svg>
+                    </a>
+                    <p class="mt-3 text-xs text-sky-200/70">
+                      Jika WhatsApp tidak terbuka otomatis, tekan tombol di atas.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="border-t border-hairline bg-card">
+      <div class="container-x py-14">
+        <div class="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
+          <div>
+            <a href="#" class="flex items-center gap-2.5" aria-label="Klinik Aras Medical Center — beranda" data-cms-logo="brand">
+              <span class="grid size-10 place-items-center rounded-2xl bg-primary text-white" data-brand-mark aria-hidden="true">
+                <svg class="size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 4v16M4 12h16" />
+                </svg>
+              </span>
+              <img class="hidden h-10 w-auto max-w-44 shrink-0 object-contain" data-brand-logo alt="" />
+              <span class="font-display leading-tight" data-brand-text>
+                <span class="block font-bold text-ink" data-cms="brand.name">Klinik Aras</span>
+                <span class="block text-[11px] font-medium tracking-[0.14em] text-primary uppercase" data-cms="brand.tagline">Medical Center</span>
+              </span>
+            </a>
+            <p class="mt-4 max-w-xs text-sm" data-cms="footer.about">
+              Layanan kesehatan keluarga terpercaya dengan dokter berpengalaman
+              dan fasilitas modern sejak 2011.
+            </p>
+          </div>
+
+          <nav aria-labelledby="footer-nav-layanan">
+            <h3 id="footer-nav-layanan" class="font-semibold text-ink">Layanan</h3>
+            <ul class="mt-4 grid gap-2.5 text-sm" data-cms-list="footer.serviceLinks">
+              <li data-cms-item><a href="#layanan" data-field-href="href" data-field="label" class="text-body hover:text-primary">Poliklinik Umum</a></li>
+              <li data-cms-item><a href="#layanan" data-field-href="href" data-field="label" class="text-body hover:text-primary">Kesehatan Anak</a></li>
+              <li data-cms-item><a href="#layanan" data-field-href="href" data-field="label" class="text-body hover:text-primary">Kandungan &amp; Kesehatan Wanita</a></li>
+              <li data-cms-item><a href="#layanan" data-field-href="href" data-field="label" class="text-body hover:text-primary">Klinik Jantung</a></li>
+              <li data-cms-item><a href="#layanan" data-field-href="href" data-field="label" class="text-body hover:text-primary">Medical Check-Up</a></li>
+            </ul>
+          </nav>
+
+          <div>
+            <h3 class="font-semibold text-ink">Jam Operasional</h3>
+            <dl class="mt-4 grid gap-2 text-sm" data-cms-list="footer.hours">
+              <div class="flex justify-between gap-4" data-cms-item>
+                <dt class="text-body" data-field="day">Senin – Jumat</dt>
+                <dd class="font-medium text-ink" data-field="time">08.00 – 21.00</dd>
+              </div>
+              <div class="flex justify-between gap-4" data-cms-item>
+                <dt class="text-body" data-field="day">Sabtu</dt>
+                <dd class="font-medium text-ink" data-field="time">08.00 – 17.00</dd>
+              </div>
+              <div class="flex justify-between gap-4" data-cms-item>
+                <dt class="text-body" data-field="day">Minggu</dt>
+                <dd class="font-medium text-ink" data-field="time">09.00 – 14.00</dd>
+              </div>
+            </dl>
+            <p class="mt-3 text-xs text-body" data-cms="footer.hoursNote">Layanan gawat darurat WhatsApp tersedia 24 jam.</p>
+          </div>
+
+          <div>
+            <h3 class="font-semibold text-ink">Hubungi Kami</h3>
+            <ul class="mt-4 grid gap-3 text-sm">
+              <li class="flex items-start gap-2.5">
+                <svg class="mt-0.5 size-4 shrink-0 text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0z" />
+                  <circle cx="12" cy="10" r="3" />
+                </svg>
+                <span data-cms="contact.address">Jl. Kesehatan No. 123, Kota Anda</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <svg class="mt-0.5 size-4 shrink-0 text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
+                </svg>
+                <a href="tel:+6281234567890" data-cms-href="contact.phoneHref" class="hover:text-primary"><span data-cms="contact.phoneDisplay">(0812)&nbsp;3456&#8209;7890</span></a>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <svg class="mt-0.5 size-4 shrink-0 text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <rect x="2" y="4" width="20" height="16" rx="2" />
+                  <path d="m2 7 10 7L22 7" />
+                </svg>
+                <a href="mailto:halo@klinikaras.id" data-cms-mailto="contact.email" class="hover:text-primary"><span data-cms="contact.email">halo@klinikaras.id</span></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="mt-12 flex flex-wrap items-center justify-between gap-3 border-t border-hairline pt-6 text-sm text-body">
+          <p>© <span id="footer-year">2026</span> <span data-cms="footer.copyrightName">Klinik Aras Medical Center</span>. Hak cipta dilindungi.</p>
+          <a href="#konten-utama" class="group flex items-center gap-1.5 font-medium text-primary hover:text-primary-dark">
+            Kembali ke atas
+            <svg class="size-4 transition group-hover:-translate-y-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M12 19V5M6 11l6-6 6 6" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Sticky mobile CTA -->
+    <div class="fixed inset-x-0 bottom-0 z-40 border-t border-hairline bg-card/95 p-3 backdrop-blur lg:hidden">
+      <a href="#janji-temu" class="btn-accent w-full">Buat Janji Temu</a>
+    </div>
+    <div class="h-16 lg:hidden" aria-hidden="true"></div>
+
+    <script src="assets/content.js" defer></script>
+    <script src="assets/main.js" defer></script>
+  </body>
+</html>

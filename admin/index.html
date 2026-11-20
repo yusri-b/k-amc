@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>Admin — Klinik Aras Medical Center</title>
+    <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="../assets/tw.css" />
+  </head>
+
+  <body class="min-h-screen bg-surface font-sans text-body antialiased">
+    <!-- ================= LOGIN ================= -->
+    <div
+      id="login-view"
+      class="relative hidden min-h-screen place-items-center overflow-hidden px-4 py-12"
+    >
+      <div class="pointer-events-none absolute inset-0" aria-hidden="true">
+        <div class="absolute -top-32 -right-24 size-[28rem] rounded-full bg-primary/15 blur-3xl"></div>
+        <div class="absolute -bottom-40 -left-24 size-[26rem] rounded-full bg-accent/10 blur-3xl"></div>
+      </div>
+
+      <div class="relative w-full max-w-md">
+        <a href="../" class="mb-6 flex items-center justify-center gap-2.5" aria-label="Klinik Aras Medical Center — beranda" data-admin-brand>
+          <span class="grid size-11 place-items-center rounded-2xl bg-primary text-white shadow-soft" data-brand-mark aria-hidden="true">
+            <svg class="size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 4v16M4 12h16" />
+            </svg>
+          </span>
+          <img class="hidden h-11 w-auto max-w-52 shrink-0 object-contain" data-brand-logo alt="" />
+          <span class="font-display leading-tight" data-brand-text>
+            <span class="block text-lg font-bold text-ink" data-brand-name>Klinik Aras</span>
+            <span class="block text-[11px] font-medium tracking-[0.14em] text-primary uppercase" data-brand-tagline>Medical Center</span>
+          </span>
+        </a>
+
+        <div class="admin-card p-6 sm:p-8">
+          <div class="mb-6">
+            <p class="admin-badge">Admin Panel</p>
+            <h1 class="mt-3 text-2xl font-bold text-ink">Masuk untuk mengelola konten</h1>
+            <p class="mt-2 text-sm">Gunakan kata sandi admin untuk membuka panel pengelolaan landing page.</p>
+          </div>
+
+          <form id="login-form" class="grid gap-4" novalidate>
+            <div>
+              <label for="login-password" class="admin-label">Kata sandi</label>
+              <input
+                id="login-password"
+                name="password"
+                type="password"
+                autocomplete="current-password"
+                required
+                class="admin-input"
+                placeholder="••••••••"
+                aria-describedby="login-error"
+              />
+            </div>
+
+            <p id="login-error" class="hidden rounded-xl border border-red-200 bg-red-50 px-3.5 py-3 text-sm font-medium text-red-700" role="alert"></p>
+
+            <button type="submit" id="login-submit" class="admin-btn-primary w-full">Masuk</button>
+          </form>
+
+          <p class="mt-5 text-center text-xs">
+            <a href="../" class="font-medium text-primary hover:text-primary-dark">← Kembali ke landing page</a>
+          </p>
+        </div>
+
+        <p class="mt-6 text-center text-xs text-body/80">
+          Atur kata sandi lewat variabel lingkungan <code class="rounded bg-card px-1.5 py-0.5 font-mono text-[11px] text-ink">ADMIN_PASSWORD</code> saat menjalankan server.
+        </p>
+      </div>
+    </div>
+
+    <!-- ================= APP ================= -->
+    <div id="app-view" class="hidden">
+      <div id="sidebar-overlay" class="fixed inset-0 z-40 hidden bg-ink/50 backdrop-blur-sm lg:hidden"></div>
+
+      <!-- Sidebar -->
+      <aside id="sidebar" class="admin-sidebar" aria-label="Navigasi admin">
+        <div class="flex items-center justify-between gap-3 border-b border-white/10 px-5 py-5">
+          <a href="../" class="flex items-center gap-2.5" aria-label="Lihat landing page" data-admin-brand>
+            <span class="grid size-10 place-items-center rounded-xl bg-primary text-white" data-brand-mark aria-hidden="true">
+              <svg class="size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 4v16M4 12h16" />
+              </svg>
+            </span>
+            <img class="hidden h-10 w-auto max-w-40 shrink-0 object-contain" data-brand-logo alt="" />
+            <span class="font-display leading-tight" data-brand-text>
+              <span class="block text-base font-bold text-white" data-brand-name>Klinik Aras</span>
+              <span class="block text-[10px] font-medium tracking-[0.16em] text-primary-light uppercase">Content Studio</span>
+            </span>
+          </a>
+          <button type="button" id="sidebar-close" class="grid size-9 cursor-pointer place-items-center rounded-lg text-sky-100/70 transition hover:bg-white/10 hover:text-white lg:hidden" aria-label="Tutup menu">
+            <svg class="size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+              <path d="M6 6l12 12M18 6L6 18" />
+            </svg>
+          </button>
+        </div>
+
+        <nav id="admin-nav" class="flex-1 overflow-y-auto px-3 py-4" aria-label="Bagian konten"></nav>
+
+        <div class="grid gap-2 border-t border-white/10 p-4">
+          <a href="../" target="_blank" rel="noopener" class="admin-nav-item">
+            <svg class="size-4.5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M14 3h7v7M21 3l-9 9" />
+              <path d="M19 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h6" />
+            </svg>
+            Lihat landing page
+          </a>
+          <button type="button" id="logout-btn" class="admin-nav-item">
+            <svg class="size-4.5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4" />
+              <path d="M16 17l5-5-5-5M21 12H9" />
+            </svg>
+            Keluar
+          </button>
+        </div>
+      </aside>
+
+      <!-- Main -->
+      <div class="admin-main">
+        <header class="sticky top-0 z-30 border-b border-hairline bg-surface/90 backdrop-blur">
+          <div class="mx-auto flex w-full max-w-5xl flex-wrap items-center gap-3 px-4 py-3 sm:px-6 lg:py-4">
+            <button type="button" id="sidebar-open" class="admin-icon-btn shrink-0 lg:hidden" aria-label="Buka menu">
+              <svg class="size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+                <path d="M4 7h16M4 12h16M4 17h16" />
+              </svg>
+            </button>
+
+            <div class="min-w-0 flex-1">
+              <div class="flex flex-wrap items-center gap-2">
+                <h1 id="page-title" class="truncate font-display text-lg font-bold text-ink">Pengaturan Umum</h1>
+                <span id="save-status" class="inline-flex items-center gap-1.5 rounded-full bg-accent/10 px-2.5 py-1 text-[11px] font-semibold text-accent" aria-live="polite">
+                  <span id="save-dot" class="size-1.5 rounded-full bg-accent"></span>
+                  <span id="save-status-text">Tersimpan</span>
+                </span>
+              </div>
+              <p id="page-subtitle" class="hidden truncate text-xs sm:block">Metadata halaman, identitas klinik, dan kontak.</p>
+            </div>
+
+            <div class="flex items-center gap-2">
+              <button type="button" id="discard-btn" class="admin-btn-ghost hidden sm:inline-flex" disabled>Batalkan</button>
+              <button type="button" id="save-btn" class="admin-btn-primary" disabled>
+                <svg class="size-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z" />
+                  <path d="M17 21v-8H7v8M7 3v5h8" />
+                </svg>
+                <span id="save-label">Simpan</span>
+              </button>
+            </div>
+          </div>
+        </header>
+
+        <main class="mx-auto w-full max-w-5xl px-4 py-6 sm:px-6 lg:py-8">
+          <div id="loading-state" class="admin-card flex items-center gap-3 p-6 text-sm">
+            <span class="size-4 animate-spin rounded-full border-2 border-primary/30 border-t-primary" aria-hidden="true"></span>
+            Memuat konten…
+          </div>
+
+          <div id="load-error" class="hidden rounded-2xl border border-red-200 bg-red-50 p-6">
+            <h2 class="text-lg font-bold text-red-800">Konten gagal dimuat</h2>
+            <p id="load-error-text" class="mt-1 text-sm text-red-700"></p>
+            <button type="button" id="retry-btn" class="admin-btn-ghost mt-4">Coba lagi</button>
+          </div>
+
+          <form id="editor-form" class="hidden" novalidate>
+            <div id="editor-fields" class="grid gap-5"></div>
+
+            <div class="mt-6 flex flex-wrap items-center justify-between gap-3 rounded-2xl border border-hairline bg-card px-5 py-4 shadow-soft">
+              <p class="text-xs">Perubahan langsung tampil di landing page setelah disimpan.</p>
+              <div class="flex items-center gap-2">
+                <button type="button" class="admin-btn-ghost discard-inline" disabled>Batalkan perubahan</button>
+                <button type="submit" class="admin-btn-accent" disabled>Simpan perubahan</button>
+              </div>
+            </div>
+          </form>
+        </main>
+      </div>
+    </div>
+
+    <div id="toasts" class="pointer-events-none fixed inset-x-0 bottom-0 z-[100] flex flex-col items-center gap-2 p-4 sm:items-end" aria-live="polite" aria-atomic="false"></div>
+
+    <script src="./app.js" defer></script>
+  </body>
+</html>
